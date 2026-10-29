@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Adapted from Edgecut by HTML Design (CC BY 3.0). Restyled and localized; see reference/. -->
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="TERRA — навчальний інтернет-магазин матеріалів для терас і фасадів, вікон, дверей та фурнітури. Каталог і підбір матеріалів для вашого простору.">
+  <meta name="theme-color" content="#253e34">
+  <title>TERRA — матеріали для вашого простору</title>
+  <link rel="icon" href="images/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/edgecut-components.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/analytics.js" defer></script>
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Перейти до вмісту</a>
+  <div class="topline">Навчальний проєкт · Матеріали, що формують простір</div>
+  <!-- Navigation -->
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="TERRA — головна">TERRA<span>ARCHITECTURAL MATERIALS</span></a>
+    <nav aria-label="Головне меню"><a href="#catalog">Каталог</a><a href="#approach">Про матеріали</a><a href="#contact">Консультація</a></nav>
+    <button class="cart-open" id="open-cart" aria-haspopup="dialog">Кошик <span id="cart-count">0</span></button>
+  </header>
+  <main id="main">
+    <!-- Header -->
+    <section class="hero wrap">
+      <div class="hero-copy"><p class="eyebrow">ТЕРАСИ / ФАСАДИ / ВІКНА / ДВЕРІ</p><h1>Ваш простір.<br>Природний<br><em>характер.</em></h1><p class="lead">Фактури дерева, чисті лінії та продумані деталі. Знайдіть матеріали для будинку, до якого хочеться повертатися.</p><a class="button" href="#catalog">Обрати матеріали <span aria-hidden="true">↗</span></a><p class="hero-note">Від першої дошки до останньої деталі.</p></div>
+      <figure class="hero-image"><img src="images/house.svg" alt="Ілюстрація сучасного будинку з дерев’яною терасою та панорамними вікнами" width="1000" height="1100"><figcaption><span>01 / НАТХНЕННЯ</span>Тепло дерева. Легкість простору.</figcaption></figure>
+    </section>
+    <div class="materials wrap"><span>Для відкритих просторів</span><span>Для виразних фасадів</span><span>Для затишних інтер’єрів</span></div>
+    <!-- Product cards adapted from Edgecut furniture_section / box / detail-box -->
+    <section class="catalog wrap furniture_section" id="catalog">
+      <div class="section-head"><div><p class="eyebrow">КОЛЕКЦІЯ МАТЕРІАЛІВ</p><h2>Почніть із деталей</h2></div><p>П’ять напрямів. Єдина естетика.<br>Обирайте рішення для свого проєкту.</p></div>
+      <div class="catalog-tools"><div class="filters" role="group" aria-label="Категорії товарів"><button class="active" data-filter="all" aria-pressed="true">Усе</button><button data-filter="terrace" aria-pressed="false">Тераси</button><button data-filter="facade" aria-pressed="false">Фасади</button><button data-filter="windows" aria-pressed="false">Вікна</button><button data-filter="doors" aria-pressed="false">Двері</button><button data-filter="hardware" aria-pressed="false">Фурнітура</button></div><label class="sort">Сортування <select id="sort"><option value="default">За добіркою</option><option value="asc">Спочатку дешевші</option><option value="desc">Спочатку дорожчі</option></select></label></div>
+      <p class="catalog-note">Демонстраційні моделі та умовні ціни. Одиниці продажу зазначено в кожній картці.</p>
+      <div class="products" id="products"></div><noscript>Для каталогу та кошика увімкніть JavaScript у браузері.</noscript>
+    </section>
+    <section class="approach" id="approach"><div class="wrap approach-grid"><div><p class="eyebrow">ПРОДУМАНИЙ ВИБІР</p><h2>Матеріали мають<br>працювати разом.</h2><p>Поєднайте відтінок тераси з фасадом, а колір вікон — із фурнітурою. Так окремі рішення складаються в цілісний образ будинку.</p><a class="text-link" href="#contact">Підібрати поєднання ↗</a></div><div class="steps"><article><span>01</span><div><h3>Визначте умови</h3><p>Відкрита тераса чи інтер’єр? Волога, сонце та навантаження визначають вимоги до матеріалу.</p></div></article><article><span>02</span><div><h3>Порівняйте характеристики</h3><p>Перевірте розміри, комплектацію й правила монтажу в документації конкретного виробника.</p></div></article><article><span>03</span><div><h3>Зберіть свій проєкт</h3><p>Додайте матеріали до кошика та збережіть заявку для подальшого обговорення.</p></div></article></div></div></section>
+    <section class="contact wrap" id="contact"><div><p class="eyebrow">НАСТУПНИЙ КРОК</p><h2>Почнемо з вашої ідеї.</h2><p>Додайте товари до кошика та сформуйте заявку. У цьому навчальному магазині вона завантажується на ваш пристрій, без надсилання менеджеру.</p><button class="button" id="contact-cart">Сформувати заявку ↗</button></div><div class="contact-aside"><p class="eyebrow">ФОРМАТ РОБОТИ</p><h3>Онлайн-каталог</h3><p>Підбір матеріалів для терас, фасадів та інтер’єрів.</p><p class="muted">Фізичну адресу й контакти буде додано після вибору реальної компанії.</p></div></section>
+  </main>
+  <footer><div class="wrap footer-row"><a class="brand" href="#">TERRA</a><p>Навчальний проєкт · Арабаджи Віталій · 2026<br><small>Не здійснює продажів. Візуалізації та ціни ілюстративні.<br>Template by <a href="https://html.design/download/edgecut-furniture-website-template/" target="_blank" rel="noopener noreferrer">HTML Design · Edgecut</a> · CC BY 3.0 · адаптовано</small></p><button class="plain" id="privacy">Налаштування аналітики</button></div></footer>
+  <dialog id="cart-dialog" aria-labelledby="cart-title"><div class="dialog-head"><h2 id="cart-title">Ваш кошик</h2><button class="icon-button" id="close-cart" aria-label="Закрити кошик">×</button></div><div id="cart-items"></div><p class="total">Разом <strong id="cart-total">0 ₴</strong></p><p class="muted">Кількість у кошику відповідає одиницям із карток товарів. Ціни умовні.</p><form id="request-form"><label>Ваше ім’я<input name="customer" autocomplete="name" maxlength="80" required placeholder="Ім’я та прізвище"></label><label>Телефон<input name="phone" type="tel" autocomplete="tel" minlength="7" maxlength="25" pattern="\+?[0-9][0-9 ]{5,23}[0-9]" required placeholder="+380 …"></label><label>Коментар<textarea name="comment" rows="2" maxlength="600" placeholder="Розміри, колір, побажання"></textarea></label><button class="button" id="download-request" type="submit">Завантажити заявку</button><p class="muted">Дані потраплять лише у текстовий файл на вашому пристрої. Онлайн-замовлення не надсилається.</p></form></dialog>
+  <dialog id="consent-dialog" aria-labelledby="consent-title"><h2 id="consent-title">Аналітика відвідувань</h2><p>Можна дозволити Google Analytics для вимірювання переглядів і дій у каталозі. Ім’я, телефон і коментар форми не передаються в подіях сайту.</p><p id="analytics-status" class="muted"></p><div class="consent-actions"><button class="button" id="consent-yes">Дозволити</button><button class="secondary" id="consent-no">Відхилити</button></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
